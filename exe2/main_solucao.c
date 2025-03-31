@@ -108,21 +108,21 @@ int main() {
         while ((alarm_2 == 0) && (echo_end_time_2 == 0)) {}
 
         if (alarm_1 == 1) {
-            printf("Sensor 1 - erro\n");
+            printf("Sensor 1 - dist: erro\n");
         }
         else {
             int dt_1 = echo_end_time_1 - echo_start_time_1;
             int distancia_1 = (int)((dt_1 * 0.0343) / 2.0);
-            printf("Sensor 1 - %d cm\n", distancia_1);
+            printf("Sensor 1 - dist: %d cm\n", distancia_1);
         }
 
         if (alarm_2 == 1) {
-            printf("Sensor 2 - erro\n");
+            printf("Sensor 2 - dist: erro\n");
         }
         else {
             int dt_2 = echo_end_time_2 - echo_start_time_2;
             int distancia_2 = (int)((dt_2 * 0.0343) / 2.0);
-            printf("Sensor 2 - %d cm\n", distancia_2);
+            printf("Sensor 2 - dist: %d cm\n", distancia_2);
         }
         cancel_alarm(echo_timeout_alarm_1);
         cancel_alarm(echo_timeout_alarm_2);
