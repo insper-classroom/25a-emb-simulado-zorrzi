@@ -44,8 +44,8 @@ Calcular a distância em inteiro:
 int distancia_1 = (int) ((dt_1 * 0.0343) / 2.0);
 ```
 
-Imprimir o valor usando:
+Imprimir o valor usando, por exemplo:
 
 ``` c
-printf("Sensor 1 - %d cm\n", dt_1);
+printf("Sensor 2 - dist: %d cm\n", distancia_2);
 ```
