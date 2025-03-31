@@ -113,7 +113,7 @@ int main() {
         else {
             int dt_1 = echo_end_time_1 - echo_start_time_1;
             int distancia_1 = (int)((dt_1 * 0.0343) / 2.0);
-            printf("Sensor 1 - %d cm\n", dt_1);
+            printf("Sensor 1 - %d cm\n", distancia_1);
         }
 
         if (alarm_2 == 1) {
