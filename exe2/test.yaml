@@ -1,0 +1,13 @@
+name: exe2
+author: Rafael Corsi
+version: 1
+
+steps:
+  - delay: 100ms
+
+  - wait-serial: 'Sensor 1 - dist: 22 cm'
+  - wait-serial: 'Sensor 2 - dist: 40 cm'
+  - wait-serial: 'Sensor 1 - dist: 22 cm'
+  - wait-serial: 'Sensor 2 - dist: 40 cm'
+  - wait-serial: 'Sensor 1 - dist: 22 cm'
+  - wait-serial: 'Sensor 2 - dist: 40 cm'
